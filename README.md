@@ -18,6 +18,21 @@ values.
 
 ```sh
 ./bin/regrid.py --help
+
+Usage: regrid.py [OPTIONS] LON_LAT_FILE FILE_NAME OUT_FILE
+
+Arguments:
+  LON_LAT_FILE  [required]
+  FILE_NAME     [required]
+  OUT_FILE      [required]
+
+Options:
+  --plot-width INTEGER  [default: 256]
+  --install-completion  Install completion for the current shell.
+  --show-completion     Show completion for the current shell, to copy it or
+                        customize the installation.
+
+  --help                Show this message and exit.
 ```
 
 **Note:** It has some minor EIDA50 specific peculiarities that could be cleaned up.
