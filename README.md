@@ -6,6 +6,10 @@ NWCSAF re-grid pre-processor for FOREST
 These might need some careful thought to make it more portable.
 
 - [Typer](https://typer.tiangolo.com/) - A command line generator library
+- Cartopy
+- NumPy
+- Datashader
+- Xarray
 
 ## Usage
 
