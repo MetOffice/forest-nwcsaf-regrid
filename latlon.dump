@@ -1,0 +1,29 @@
+netcdf static_EUMCorrectGeoLoc_LatLon {
+dimensions:
+	image_column = 3712 ;
+	image_row = 3712 ;
+variables:
+	float latitude(image_row, image_column) ;
+		latitude:_FillValue = -1.073742e+09f ;
+		latitude:units = "degrees north" ;
+		latitude:coordinates = "lon lat" ;
+		latitude:standard_name = "Latitude" ;
+	float longitude(image_row, image_column) ;
+		longitude:_FillValue = -1.073742e+09f ;
+		longitude:units = "degrees east" ;
+		longitude:coordinates = "lon lat" ;
+		longitude:standard_name = "Longitude" ;
+
+// global attributes:
+		:Title = "MO_SEVIRI" ;
+		:Institution = "Met Office" ;
+		:Source = "not archived" ;
+		:Platform = "MSG-4" ;
+		:Sensor = "SEVIRI" ;
+		:product_version = "1" ;
+		:date_created = "20190329T100348Z" ;
+		:geospatial_lat_min = -81.2641f ;
+		:geospatial_lat_max = 81.2641f ;
+		:geospatial_lon_min = -81.20194f ;
+		:geospatial_lon_max = 81.20194f ;
+}
