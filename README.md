@@ -38,3 +38,9 @@ Options:
 **Note:** It has some minor EIDA50 specific peculiarities that could be cleaned up.
 
 **Note:** FOREST-Lite supports `web_mercator_x` and `web_mercator_y` dimensions. Perhaps this could be back-ported to FOREST-Original.
+
+### Destination grid size
+
+The target web mercator grid is controlled via the `--plot-width` flag. The code uses `plot_width = plot_height` as arguments to a `datashader.Canvas` to determine the output grid.
+
+
