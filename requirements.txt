@@ -1,0 +1,6 @@
+cartopy
+datashader
+h5netcdf
+numpy
+typer
+xarray
