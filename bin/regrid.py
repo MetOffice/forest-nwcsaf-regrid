@@ -5,20 +5,18 @@ import xarray
 from tiling import web_mercator
 
 
-# Geostationary coordinate file (TODO: put this into command line args)
-LON_LAT_FILE = os.getenv("LON_LAT_FILE")
-LON_LAT_DS = xarray.open_dataset(LON_LAT_FILE)
-
-
 app = typer.Typer()
 
 
-def main(file_name: str, out_file: str, plot_width: int = 256):
+def main(lon_lat_file: str, file_name: str, out_file: str, plot_width: int = 256):
     print(file_name)
 
+    # Geostationary coordinate file
+    lon_lat_ds = xarray.open_dataset(lon_lat_file)
+
     # Read Geostationary projection
-    longitudes = LON_LAT_DS.longitude
-    latitudes = LON_LAT_DS.latitude[::-1]
+    longitudes = lon_lat_ds.longitude
+    latitudes = lon_lat_ds.latitude[::-1]  # TODO: Remove reverse lats step
     dataset = xarray.open_dataset(file_name)
     values = dataset["data"]
 
