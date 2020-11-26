@@ -1,6 +1,12 @@
 # FOREST NWCSAF regrid
 NWCSAF re-grid pre-processor for FOREST
 
+## Dependencies
+
+These might need some careful thought to make it more portable.
+
+- [Typer](https://typer.tiangolo.com/) - A command line generator library
+
 ## Usage
 
 This is a simple Typer command line script, it requires a file with the source grid longitude/latitude
