@@ -11,3 +11,5 @@ values.
 ```
 
 **Note:** It has some minor EIDA50 specific peculiarities that could be cleaned up.
+
+**Note:** FOREST-Lite supports `web_mercator_x` and `web_mercator_y` dimensions. Perhaps this could be back-ported to FOREST-Original.
